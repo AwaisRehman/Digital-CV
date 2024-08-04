@@ -1,9 +1,12 @@
-import { motion } from "framer-motion";
 
+import { ReactTyped } from "react-typed";
+
+import { motion } from "framer-motion";
 import { styles } from "../styles";
-// import { ComputersCanvas } from "./canvas";
+import { ComputersCanvas } from "./canvas";
 
 const Hero = () => {
+
   return (
     <section className={`relative w-full h-screen mx-auto`}>
       <div
@@ -16,16 +19,35 @@ const Hero = () => {
 
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm <span className='text-[#915EFF]'>Awais</span>
+            Hi, I'm <span className="text-[#915EFF]">Awais</span>
           </h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I develop 3D visuals, UI/UX <br className='sm:block hidden' />
-            and full stack web applications
-          </p>
+          <motion.p
+            className={`${styles.heroSubText} mt-2 text-white-100`}
+            animate={{ opacity: [0, 1] }}
+            transition={{ duration: 1 }}
+          >
+            I am a Full Stack Software Engineer specializing in
+            <br className="sm:block hidden" />
+            <ReactTyped
+              strings={[
+                "3D Visuals",
+                "UI/UX Design",
+                "MERN Stack Development",
+                "MEAN Stack Development",
+                ".NET Core Web API Development",
+              ]}
+              typeSpeed={70}
+              backSpeed={40}
+              loop
+              showCursor={true}
+              cursorChar="|"
+            />
+          </motion.p>
         </div>
+        
       </div>
-
-      {/* <ComputersCanvas /> */}
+     
+      <ComputersCanvas />
 
       <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
         <a href='#about'>
@@ -44,6 +66,7 @@ const Hero = () => {
           </div>
         </a>
       </div>
+      
     </section>
   );
 };
