@@ -15,7 +15,7 @@ import {
   git,
   dotnetcore,
   docker,
-  meta,
+  amana,
   pif,
   rcjy,
   sitcon,
@@ -39,6 +39,11 @@ export const navLinks = [
     id: "contact",
     title: "Contact",
   },
+  {
+    id: "resume",
+    title:"Download Resume",
+    download: true, // Add this flag to indicate download link
+  }
 ];
 
 const services = [
@@ -117,11 +122,25 @@ const technologies = [
 
 const experiences = [
   {
+    title: "Sr. Angular Developer",
+    company_name: "Amana Jeddah",
+    icon: amana,
+    iconBg: "#383E56",
+    date: "Sep 2023 - Present",
+    points: [
+      "Create visually appealing and intuitive user interfaces for the landing page, Amana Jeddah’s portfolio website, and the Investment Portal dashboard using Figma.",
+      "Design and develop the company portfolio website to effectively showcase Amana Jeddah's expertise, projects, and achievements in a visually engaging manner.",
+      "Utilize the latest version of Angular to develop the front-end of the Investment Portal dashboard, ensuring a professional and responsive user experience.",
+      "Implement user-centric design principles to enhance the overall usability and accessibility of the web applications, ensuring a positive experience for end-users.",
+      "Work closely with cross-functional teams, including developers and stakeholders, to ensure seamless integration of the designed UI/UX into the Angular frontend, maintaining consistency and professionalism throughout the web application.",
+    ],
+  },
+  {
     title: "Full Stack Developer",
     company_name: "Public Investment Fund",
     icon: pif,
     iconBg: "#383E56",
-    date: "Aug 2022 - Present",
+    date: "Aug 2022 - Aug 2023",
     points: [
       "Developing and maintaining QPR Software (web app) using MERN Stack and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers on JIRA to create high-quality products.",
@@ -154,18 +173,7 @@ const experiences = [
       "Participating in SDLC and providing constructive feedback to other developers.",
     ],
   },
-  {
-    title: "Web Developer",
-    company_name: "Freelancer",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2018 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js, .NET Framework and other related technologies.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "I'm a quick learner and collaborate closely with clients to create efficient, scalable, and user-friendly solutions that solve real-world problems.",
-    ],
-  },
+
 ];
 
 const testimonials = [

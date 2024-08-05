@@ -47,11 +47,9 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        I'm a skilled full stack software developer with experience in TypeScript and
-        JavaScript, and expertise in frameworks like React, Node.js  and
-        .NET Core. I'm a quick learner and collaborate closely with clients to
-        create efficient, scalable, and user-friendly solutions that solve
-        real-world problems. Let's work together to bring your ideas to life!
+        As a highly skilled Full Stack Software Developer with expertise in TypeScript, JavaScript, and frameworks such as React, Angular, Node.js, and .NET Core, I bring a comprehensive skill set to the table.
+        My approach is centered on swift learning and close collaboration with clients to deliver efficient, scalable, and user-centric solutions.
+        My goal is to address real-world challenges through innovative and practical software development. Let’s collaborate to turn your ideas into impactful realities!
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>

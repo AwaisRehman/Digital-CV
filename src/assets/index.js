@@ -22,6 +22,7 @@ import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
+import amana from "./company/amana.png"
 import meta from "./company/meta.png";
 import sitcon from "./company/sitcon.jpg";
 import rcjy from "./company/rcjy.png";
@@ -58,6 +59,7 @@ export {
   threejs,
   meta,
   sitcon,
+  amana,
   pif,
   rcjy,
   carrent,
